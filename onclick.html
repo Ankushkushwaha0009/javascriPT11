@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        .small{
+            font-size: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(146, 234, 13);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        .medium{
+            font-size: 20px;
+            padding: 10px;
+            background-color: aqua;
+            border-radius: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            
+        }
+        .large{
+            font-size: 30px;
+            padding: 10px;
+            background-color: blueviolet;
+            border-radius: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+<!--      
+    <button onclick="add(10 , 12)">Click me</button>
+    <p> Your Ans is : </p>
+    <p id="demo"></p>
+
+    <script>
+        function add(a , b){
+            document.getElementById("demo").innerHTML = a+b ;
+         }
+    </script> -->
+
+    <!-- <div class="box">
+        <p class="text">This is a Paragraph</p>
+        <button onclick="changeColor() ; changeBackground() "> click here </button>
+    </div>
+
+
+
+    <script>
+        const text1 = document.querySelector('.text');
+        function changeColor(){
+            text1.style.color = 'red';
+        }
+        function changeBackground(){
+              text1.style.backgroundColor = 'yellow'; 
+        }
+    </script> -->
+
+
+
+    <div class="box">
+        <p class="text">This is a Paragraph</p>
+        <button  class = "small" onclick="changeColor('red') ; changeBackground('yellow')  ;  fontSize('10px')  "> A </button>
+        <button  class = "medium" onclick="changeColor('red') ; changeBackground('yellow') ; fontSize('20px')   "> B </button>
+        <button  class = "large" onclick="changeColor('red') ; changeBackground('yellow')  ;  fontSize('30px')  "> C </button>
+    
+    
+    </div>
+
+
+
+    <script>
+        const text1 = document.querySelector('.text');
+        function changeColor(col1){
+            text1.style.color = col1;
+        }
+        function changeBackground(back){
+              text1.style.backgroundColor = back; 
+        }
+        function fontSize(size){
+               text1.style.fontSize = size;
+        }
+    </script>
+
+
+
+
+    
+</body>
+</html>
+
+

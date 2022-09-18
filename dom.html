@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class = "cl pi" >list 1</li>
+        <li id="first">list 2</li>
+        <li class = "cl">list 3</li>
+    </ul> 
+    
+<h2> Heading 1</h2>
+<div id  = "div1">
+    <p> Paragraph 1</p>
+    <h2> Heading 2</h2>
+    <p>Paragraph 2</p>
+    <h2> Heading 3</h2>
+    <p>Paragraph 3</p>
+</div>
+
+
+    <script>
+        // let elm = document.getElementById("first");
+        // //  console.log(elm.innerHTML); // value aa jayega 
+        // elm.innerHTML = "<p> hellow </p> ";
+
+        //class select -----------------------
+
+        // let elm = document.getElementsByClassName("cl pi"); //first wwala hi chnage hoga kyoki multiple class laga hai 
+        // // console.log(elm); //collections ban jayega 
+        // for(let i = 0 ; i  < elm.length ; i++){
+        //       elm[i].innerHTML = "<p> Hellow <p>" ;
+        // }
+        
+
+        //---------------------selecting by tag name
+        
+
+        let div1 = document.getElementById("div1");
+        let elm = div1.getElementsByTagName("h2");  //div ke andar h2 ko select karo 
+
+        for(let i = 0 ; i  < elm.length ; i++){
+              elm[i].innerHTML = " Hellow " ;
+        }
+
+
+
+
+
+
+
+         
+    </script>
+
+   
+
+
+</body>
+</html>
